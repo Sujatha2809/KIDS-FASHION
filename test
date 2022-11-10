@@ -1,0 +1,21 @@
+pipeline{
+        agent any
+        stages{
+                stage('code'){
+                               steps{
+                                      echo 'code completed'
+                                     }
+                              }
+                              
+                 stage('build with maven'){
+                               steps{
+                                      echo 'build sucess'
+                                     }
+                              }
+                stage('test'){
+                               steps{
+                                      echo 'test sucess'
+                                     }
+                              }
+               }
+        }

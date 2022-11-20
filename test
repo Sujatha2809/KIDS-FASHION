@@ -6,7 +6,7 @@ timestamps()
     buildDiscarder(logRotator(numToKeepStr: '4'))
   }
 environment {
-  kishore = "*********************-${BUILD_NUMBER}************************"
+  kishore = "*-${BUILD_NUMBER}"
   myname = "apple"
   BUILD_VERSION = "MXL-${BUILD_NUMBER}"
   }
